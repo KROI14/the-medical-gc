@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Medical GCs"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:textSize="40dp"
+            android:fontFamily="@font/playball_regular"
+            android:textColor="@color/colorAccent"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="20dp"
+                    android:text="Bank &amp; Bank account"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:background="@color/colorPrimaryDarkOpacity"
+                    android:textColor="@color/colorAccent"/>
+
+                <Spinner
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/bankList"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"/>
+
+                <EditText
+                    android:id="@+id/accNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:textCursorDrawable="@null"
+                    android:digits="0987654321"
+                    android:hint="Account no."
+                    android:textAlignment="center"
+                    android:backgroundTint="#99FFFFFF"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textColorHint="@color/colorAccentOpacity"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="20dp"
+                    android:text="Insurance"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:background="@color/colorPrimaryDarkOpacity"
+                    android:textColor="@color/colorAccent"/>
+
+                <Spinner
+                    android:id="@+id/insuranceList"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"/>
+
+                <EditText
+                    android:id="@+id/insuranceNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:textCursorDrawable="@null"
+                    android:digits="0987654321"
+                    android:hint="Card no."
+                    android:textAlignment="center"
+                    android:visibility="visible"
+                    android:backgroundTint="#99FFFFFF"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textColorHint="@color/colorAccentOpacity"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"/>
+
+                <Button
+                    android:id="@+id/btnShowBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="ENTER"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:background="@drawable/bg_input_button"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:id="@+id/bankDetailsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="40dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="20dp"
+                        android:text="Bank details"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:background="@color/colorPrimaryDarkOpacity"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/txtBankOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:text="Michael Jordan"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACCOUNT OWNER"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtBankMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:text="20000"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/colorPrimaryDark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXISTING MONEY"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtTotalFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Total fee: ₱120"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="15dp"/>
+
+                <Button
+                    android:id="@+id/btnPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="pay bill"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:visibility="visible"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:background="@drawable/bg_input_button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

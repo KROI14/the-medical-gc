@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Medical GCs"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="40dp"
+                android:fontFamily="@font/playball_regular"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Michael Jordan"
+                android:fontFamily="@font/ptserif_regular"
+                android:textAlignment="center"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Patient name"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="952 acasia st. Los angeles California USA"
+                android:fontFamily="@font/ptserif_regular"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="address"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/txtContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="098765432134"
+                android:fontFamily="@font/ptserif_regular"
+                android:textAlignment="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Charges"
+                    android:textSize="21dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textColor="@color/colorAccent"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Laboratory"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Quantity"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Price"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="X-Ray"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/txtQtyXRay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/txtPriceXray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P100"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CT-Scan"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/txtQtyCtScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/txtPriceCtScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P100"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Covid test"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/txtQtyCovidTest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/txtPriceCovidTest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P100"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="center"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Total Lab fee:"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="textStart"
+                        android:textSize="15dp"/>
+
+
+                    <TextView
+                        android:id="@+id/txtTotalLabFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P300"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="textEnd"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Room fee:"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/txtRoomPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ward-P2500"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="textEnd"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Days spent:"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/txtDaysSpent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:text="0"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Vat(12%):"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/txtTax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P1000"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColor="@color/colorAccent"
+                        android:textAlignment="textEnd"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Total fee:"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/txtTotalFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P 3800"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textEnd"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Insurance: "
+                        android:textSize="18dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/txtInsuranceName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="N/A"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textEnd"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Discounted:"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/txtDiscounted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P 3800"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textEnd"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Amount paid: "
+                        android:textSize="18dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/txtAmountPaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P 3800"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textEnd"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Existing Balance: "
+                        android:textSize="18dp"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/txtBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P 3800"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textAlignment="textEnd"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="Back"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:visibility="visible"
+                android:fontFamily="@font/ptserif_regular"
+                android:background="@drawable/bg_input_button"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+You can change the IP address in main activity

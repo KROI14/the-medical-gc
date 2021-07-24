@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".PatientInput">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20dp"
+                android:text="Patient"
+                android:fontFamily="@font/raleway_semibold"
+                android:background="@color/colorPrimaryDarkOpacity"
+                android:textColor="@color/colorAccent"/>
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textCursorDrawable="@null"
+                android:hint="Firstname"
+                android:backgroundTint="#99FFFFFF"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/ptserif_regular"
+                android:textColorHint="@color/colorAccentOpacity"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textCursorDrawable="@null"
+                android:hint="Lastname"
+                android:backgroundTint="#99FFFFFF"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/ptserif_regular"
+                android:textColorHint="@color/colorAccentOpacity"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textCursorDrawable="@null"
+                android:hint="Age"
+                android:digits="0987654321"
+                android:backgroundTint="#99FFFFFF"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/ptserif_regular"
+                android:textColorHint="@color/colorAccentOpacity"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gender"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:textColor="@color/colorAccent"/>
+
+            <RadioGroup
+                android:id="@+id/groupGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:text="Female"
+                    android:layout_marginTop="10dp"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textCursorDrawable="@null"
+                android:hint="Full Address"
+                android:backgroundTint="#99FFFFFF"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/ptserif_regular"
+                android:textColorHint="@color/colorAccentOpacity"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textCursorDrawable="@null"
+                android:hint="Contact no."
+                android:digits="0987654321"
+                android:backgroundTint="#99FFFFFF"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/ptserif_regular"
+                android:textColorHint="@color/colorAccentOpacity"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20dp"
+                android:text="Medical information"
+                android:fontFamily="@font/raleway_semibold"
+                android:background="@color/colorPrimaryDarkOpacity"
+                android:textColor="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/illness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textCursorDrawable="@null"
+                android:hint="Illness"
+                android:backgroundTint="#99FFFFFF"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/ptserif_regular"
+                android:textColorHint="@color/colorAccentOpacity"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Condition"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:textColor="@color/colorAccent"/>
+
+            <RadioGroup
+                android:id="@+id/groupCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/moderate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:text="Moderate"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/severe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:text="Severe"
+                    android:layout_marginTop="10dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Laboratory tests"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:textColor="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/xRay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorAccent"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:text="X-Ray-₱500"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"/>
+
+                    <EditText
+                        android:id="@+id/numXRay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="invisible"
+                        android:digits="0987654321"
+                        android:hint="Times used xray"
+                        android:backgroundTint="#99FFFFFF"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColorHint="@color/colorAccentOpacity"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/ctScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorAccent"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:text="CT-Scan-₱2500"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"/>
+
+                    <EditText
+                        android:id="@+id/numCTScan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:digits="0987654321"
+                        android:visibility="invisible"
+                        android:hint="Times used CT-Scan"
+                        android:backgroundTint="#99FFFFFF"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textColorHint="@color/colorAccentOpacity"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/covidTest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:textSize="20dp"
+                        android:textColor="@color/colorAccent"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:text="Covid test-₱500"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"/>
+
+                    <EditText
+                        android:id="@+id/numCovidTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#99FFFFFF"
+                        android:fontFamily="@font/ptserif_regular"
+                        android:hint="Times tested"
+                        android:paddingLeft="5dp"
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccentOpacity"
+                        android:visibility="invisible"
+                        android:digits="0987654321" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Room"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:textColor="@color/colorAccent"/>
+
+            <RadioGroup
+                android:id="@+id/groupRoomType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/rbWard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:text="Ward-₱500/day"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rbICU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ptserif_regular"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:text="ICU-₱1500/day"
+                    android:layout_marginTop="10dp"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/daysSpent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textCursorDrawable="@null"
+                android:hint="Days spent"
+                android:digits="0987654321"
+                android:backgroundTint="#99FFFFFF"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/ptserif_regular"
+                android:textColorHint="@color/colorAccentOpacity"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Patient"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ptserif_regular"
+                android:background="@drawable/bg_input_button"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

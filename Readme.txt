@@ -1,1 +1,2 @@
-You can change the IP address in main activity
+# The Medical GC 
+## An android application for paying hospital bills
